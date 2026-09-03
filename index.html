@@ -6,6 +6,7 @@
     <title>Fortune Private Pool & Event Place</title>
     <link rel="stylesheet" href="style.css"
 </head>
+
 <body>
     <header>
         <h1>Fortune Private Pool And Events Place</h1>
@@ -43,14 +44,24 @@
 
                 <label for="date">Preferred Date:</label>
                 <input type="date" id="date" name="date" required>
+                
+                <label for="tour-type">Select Tour Type:</label>
+                <select id="tour-type" name="tour-type">
+                <option value="day">Day Tour (PHP 3,500)</option>
+                <option value="night">Night Tour (PHP 6,500)</option>
+            </select>
 
-                <button type="submit">Submit Request</button>
+                <button type="button" id="submit-btn">Submit Request</button>
             </form>
+
+            <p id="booking-result" style="font-weight: bold; color: #005f73; margin-top: 15px; text-align: center;"></p>
         </section>
     </main>
 
     <footer>
         <p>&copy; 2026 Fortune Private Pool and Event Place</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
